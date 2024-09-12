@@ -1,0 +1,16 @@
+    1 /* PROGRAM Summation of float numbers input from keyboard */
+    2 #include <stdlib.h>
+    3 #define n 10    /* macro definition: n is now alias of 10, making code more readable */
+    4 float values[n+1];
+    5 int i;
+    6 
+    7 main() {
+    8   /* read n float numbers from keyboard */
+    9   for (i = 1; i <= n; i++)
+   10     cin >> values[i];  /* C++ style input */
+   11   float sum = 0;
+   12   for (i = 1; i <= n; i++)
+   13     sum += values[i];
+   14   cout.precision(4);
+   15   cout << "sum = " << sum;  /* C++ style output */
+   16 }
