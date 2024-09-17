@@ -1,10 +1,8 @@
-    1 #include <math.h>
-    2 #include <stdlib.h>
+    1 #include <stdlib.h>
+    2 #include <math.h>
     3 
     4 int main(){
-    5     int n = 100;
-    6     int sum = 0;
-    7     sum = ((n*(n+1))/2);
-    8     cout<<sum;
-    9     return (0);
-   10 }
+    5     int n;
+    6     cin>>n;
+    7     cout<<n;
+    8 }
