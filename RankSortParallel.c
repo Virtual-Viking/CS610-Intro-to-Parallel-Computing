@@ -1,7 +1,7 @@
 /* PROGRAM RankSortParallel */
 /* Figure 2.3 */
 #include <stdlib.h>
-#define n 100
+#define n 10
 int values[n+1], final[n+1];
 int i;
 
@@ -22,8 +22,8 @@ void PutinPlace( int src ) {
 
 main() {
   for (i = 1; i <= n; i++)
-    values[i] = rand() % 100;  /* initialize values */
-    /* cin >> values[i]; */    /* if to initialize with input values */
+    /*values[i] = rand() % 100;  *//* initialize values */
+    cin >> values[i];     /* if to initialize with input values */
   for (i = 1; i <= n; i++) {
     cout << values[i] << " "; 
     if (i % 10 == 0) cout << endl;
