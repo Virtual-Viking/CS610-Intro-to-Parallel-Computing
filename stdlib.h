@@ -1,6 +1,6 @@
-    int abs(int j);
-    /* absolute value of integer */
 
+
+    
     void * malloc(int size);
 
     void * calloc(int nmemb, int size);
@@ -16,6 +16,9 @@
 
     void exit(int status);
     /* causes normal program termination */
+
+    int abs(int n);
+    /* returns absolute value of n */
 
     typedef struct {int quot,rem;} div_t;
 

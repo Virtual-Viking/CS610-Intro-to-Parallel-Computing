@@ -3,6 +3,7 @@
 
 int main(){
     int n;
+    cout<<"PLease enter a number to calculate factorial.  ";
     cin>>n;
     float a = 1;
     float i = 1;

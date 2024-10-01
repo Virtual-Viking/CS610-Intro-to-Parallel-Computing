@@ -3,7 +3,6 @@
 #include <math.h>
 #define n 10
 float A[n+1][n+1], B[n+1][n+1], C[n+1][n+1]; 
-float H[2+1][2+1] = {0.0, 0.0, 0.0, 0.0, 0.707, 0.707, 0.0, 0.707, -0.707}};
 int i, j; 
 
 void VectorProduct(int i, int j) {
@@ -35,21 +34,10 @@ main() {
     }
       
  
-  /*compute row i of A times column j of B in parallel */
-  /*
   forall i = 1 to n do
     forall j = 1 to n do
+      /*compute row i of A times column j of B in parallel */
       VectorProduct(i, j);
-  */
-  forall i = 1 to n do
-    forall j = 1 to n do
-    {
-      float sum = 0.0;
-      int k;
-      for (k = 1; k <= n; k++)
-        sum = sum + A[i][k] * B[k][j];
-      C[i][j] = sum;
-    }
   
   cout << "A = " << "\n";
   printMatrix(A);
